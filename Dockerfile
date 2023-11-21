@@ -1,0 +1,9 @@
+FROM python:3.11
+
+WORKDIR /
+
+COPY . /
+
+RUN pip install django
+
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8080"]

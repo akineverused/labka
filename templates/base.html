@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ name }}</title>
+    <title>{{ title }}</title>
 </head>
 <body>
-{{ name }}
+<table>
+    <tr>
+        <th>Student id</th>
+        <th>Student name</th>
+        <th>Gender</th>
+    </tr>
+{% for i in sdu%}
+    <tr>
+        <th>{{ i.id }}</th>
+        <th>{{ i.name }}</th>
+        <th>{{ i.gender }}</th>
+    </tr>
+
+{% endfor %}
+</table>
 </body>
 </html>
